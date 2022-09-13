@@ -1,0 +1,12 @@
+public class ex14 {
+    public static void main(String[] args) {
+        String numerosImpares = "";
+        for (int i = 100; i < 201; i++) {
+            if (i % 2 != 0) {
+               numerosImpares += i + " ";
+            }
+        }
+        System.out.println(numerosImpares);
+    }
+}
+//14) Escrever um algoritmo que gera e escreve os números ímpares entre 100 e 200.
