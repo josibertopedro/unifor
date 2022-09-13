@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ex01 {
+    public static void main(String[] args) {
+        Scanner sc1 = new Scanner(System.in);
+        double polegada;
+        double MM = 25.4;
+        double ResultadoPolegada;
+        System.out.println("Digite a Polegada: ");
+        polegada = sc1.nextDouble();
+        ResultadoPolegada = polegada*MM;
+        System.out.println(ResultadoPolegada + "mm");
+    }
+}
