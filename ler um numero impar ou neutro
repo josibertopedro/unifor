@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ex08 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double valor;
+        System.out.println("Digite seu valor: ");
+         valor = x.nextDouble();
+         if(valor>0 && valor != 0){
+             System.out.println("Seu numero é positivo");
+        }else{
+             System.out.println("seu numero é neutro");
+         }
+
+         if(valor<=-1){
+             System.out.println("Seu numero é negativo");
+         }
+
+    }
+}
+//8) Leia um valor inteiro e diga se ele é positivo, negativo ou neutro
