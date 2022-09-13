@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class ex11 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        int notaA;
+        int notaB;
+        int notaC;
+        int media;
+        System.out.println("Digite a primeira nota: ");
+        notaA = x.nextInt();
+        System.out.println("Digite a segunda nota: ");
+        notaB = x.nextInt();
+        System.out.println("Digite a terceira nota: ");
+        notaC = x.nextInt();
+        media = (notaA + notaB + notaC) / 3;
+        if(media >= 8 && media <= 10){
+            System.out.println("Conceito A");
+
+        }else if (media >= 5 && media <= 8) {
+            System.out.println("Conceito B");
+        }else{
+            System.out.println("Conceito C");
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+//11) Faça um algoritmo que, dado as três notas de um aluno, determine e exiba a sua média
+//final e o seu conceito, sabendo-se que:
+  //      – A média final é calculada pela média aritmética das 3 notas;
+    //    – O conceito é determinado de com base na tabela abaixo:
+      //  Media Final Conceito
+        //8,0 => media e media <= 10 A
+       //5,0 => media e media < 8,0 B
+//< 5,0 C
