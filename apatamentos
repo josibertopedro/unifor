@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+public class ex10 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        String nome;
+        int apartamento;
+        int diarias;
+        double consumo;
+        double valorEstadia;
+        double aptoA;
+        double aptoB;
+        double aptoC;
+        double aptoD;
+        double servico;
+        double subtotal;
+        double total;
+        System.out.println("Olá Digite o nome: ");
+        nome = x.nextLine();
+        System.out.println(" digite o tipo do apartamento: 1 = A ,2 = B, 3 = C, 4 = D");
+        apartamento = x.nextInt();
+        System.out.println("Digite quantas diarias foram: ");
+        diarias = x.nextInt();
+        System.out.println("Digite o valor do consumo: ");
+        consumo = x.nextDouble();
+        aptoA = 150.00;
+        aptoB = 100.00;
+        aptoC = 75.00;
+        aptoD = 50.00;
+        servico = 0.1;
+        switch (apartamento) {
+
+            case 1:
+                System.out.println("O valor da diaria do apartamento A é: "+ aptoA);
+                valorEstadia = (aptoA * diarias + consumo);
+                subtotal = valorEstadia * servico;
+                total = valorEstadia + subtotal;
+                System.out.println (nome + " o apartamento A  com o valor de "+ diarias + " diarias de" + aptoA + "com o consumo interno de" + consumo + " com o valor da taxa de serviço geral de "+subtotal+ " e total geral de " + total);
+
+
+                break;
+
+            case 2:
+                System.out.println("O valor da diaria do apartamento A é: "+ aptoB);
+                valorEstadia = (aptoB * diarias + consumo);
+                subtotal = valorEstadia * servico;
+                total = valorEstadia + subtotal;
+                System.out.println (nome + " o apartamento A  com o valor de "+ diarias + " diarias de " + aptoB + " com o consumo interno de " + consumo + " com o valor da taxa de serviço geral de "+subtotal+ " e total geral de " + total);
+
+
+                break;
+
+            case 3:
+                System.out.println("O valor da diaria do apartamento A é: "+ aptoC);
+                valorEstadia = (aptoC * diarias + consumo);
+                subtotal = valorEstadia + servico;
+                total = valorEstadia + subtotal;
+                System.out.println (nome + " o apartamento A  com o valor de "+ diarias + " diarias de " + aptoC + " com o consumo interno de " + consumo + " com o valor da taxa de serviço geral de "+subtotal+ " e total geral de " + total);
+                break;
+            case 4:
+                System.out.println("O valor da diaria do apartamento A é: "+ aptoD);
+                valorEstadia = (aptoD * diarias + consumo);
+                subtotal = valorEstadia + servico;
+                total = valorEstadia + subtotal;
+                System.out.println (nome + " o apartamento A  com o valor de "+ diarias + " diarias de " + aptoD + " com o consumo interno de " + consumo + " com o valor da taxa de serviço geral de "+subtotal+ " e total geral de " + total);
+
+                break;
+
+            default:
+
+                System.out.println("Erro na digitação tente novamente!");
+
+        }
+    }
+}
+
+
+
+//10) Faça um algoritmo para calcular a conta final de um hóspede de um hotel fictício,
+//considerando que:
+//i) Serão lidos o nome do hóspede, o tipo do apartamento utilizado (A, B, C ou D), o número de
+//diárias utilizadas pelo hóspede e o valor do consumo interno do hóspede;
+//ii) O valor da diária é determinado pela seguinte tabela:
+//Tipo Apto Valor Diária
+//A R$ 150,00
+//B R$ 100,00
+//C R$ 75,00
+//D R$ 50,00
+//iii) O valor total das diárias é calculado pela multiplicação do número de diárias utilizadas pelo
+//valor da diária;
+//iv)O subtotal é calculado pela soma do valor total das diárias e o valor do consumo interno;
+//v) O valor da taxa de serviço equivale a 10% do subtotal;
+//vi)O total geral resulta da soma do subtotal com a taxa de serviço.
+//vii) Escreva a conta final contendo: o nome do hóspede, o tipo do apartamento, o número de diárias
+//utilizadas, o valor unitário da diária, o valor total da  diárias, o valor do consumo interno, o
+//subtotal, o valor da taxa de serviço e o total geral.
