@@ -1,0 +1,20 @@
+public class ex04 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double Nota1;
+        double Nota2;
+        double Nota3;
+        double Media;
+        System.out.println("Digite sua primeira nota: ");
+        Nota1 = x.nextDouble();
+        System.out.println("Digite sua segunda nota: ");
+        Nota2 = x.nextDouble();
+        System.out.println("Digite sua terceira nota: ");
+        Nota3 = x.nextDouble();
+        Media = ((Nota1 * 2 + Nota2 * 3 + Nota3 * 5)/2);
+        System.out.println("Média: " + Media);
+
+    }
+}
+//4) Leia 3 variáveis A e B e C, que são as notas de um aluno. A seguir, calcule a média do
+//aluno, sabendo que a nota A tem peso 2, a nota B tem peso 3 e a nota C tem peso 5.
