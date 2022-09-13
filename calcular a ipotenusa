@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ex02 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double CatetoA;
+        double CatetoB;
+        double hipotenusa;
+        System.out.println("Cateto Adjacente");
+        CatetoA = x.nextDouble();
+        System.out.println("Cateto Oposto");
+        CatetoB = x.nextDouble();
+        hipotenusa = (CatetoA*CatetoA)+(CatetoB*CatetoB);
+        System.out.println("A hipotenusa é: " + Math.sqrt(hipotenusa));
+    }
+}
