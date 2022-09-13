@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ex16 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Digite o um valor para N: ");
+        int n = x.nextInt();
+        for(int i= 1;i< 11;i++){
+            int resultado = n * i;
+            System.out.println(String.format("%d x %d = %d", i, n, resultado));
+        }
+    }
+}
+//16) Faça um algoritmo que leia 1 valores para uma N. A seguir, mostre a tabuada de N:
+//1 x N = N
+//2 x N = 2N
+//...
+//10 x N = 10N
