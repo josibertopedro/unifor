@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ex05 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double a;
+        double b;
+        double c;
+        double d;
+        double conta;
+
+        System.out.println("Digite seu numero: ");
+        a = x.nextDouble();
+        System.out.println("Digite seu numero: ");
+        b = x.nextDouble();
+        System.out.println("Digite seu numero: ");
+        c = x.nextDouble();
+        System.out.println("Digite seu numero: ");
+        d = x.nextDouble();
+        conta = (a*b-c*d);
+        System.out.println("conta: " + conta);
+    }
+}
+//5) Leia 4 variáveis A,B,C e D. A seguir, calcule e mostre a diferença do produto de A e B
+//pelo produto de C e D (A*B-C*D).
