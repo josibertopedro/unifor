@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ex07 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double valor;
+        System.out.println("Digite seu valor: ");
+        valor = x.nextDouble();
+        if(valor % 2 == 0){
+            System.out.println("Seu valor é par");
+        }else{
+            System.out.println("seu valor é impar");
+        }
+    }
+}
+//7) Leia um valor inteiro X e diga se ele é par ou ímpar.
