@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ex03 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double Nota1;
+        double Nota2;
+        double Media;
+        System.out.println("Digite sua primeira nota: ");
+        Nota1 = x.nextDouble();
+        System.out.println("Digite sua segunda nota: ");
+        Nota2 = x.nextDouble();
+        Media = ((Nota1 * 3.5 + Nota2 * 7.5)/2);
+        System.out.println("Média: " + Media);
+
+    }
+}
