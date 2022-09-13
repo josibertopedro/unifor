@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ex17 {
+    public void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        for(int i = 0;i <9;i++){
+            System.out.println("Digite um nome: ");
+            String nome = x.nextLine();
+            int numeroDeLetras = getNumberOfLettersOfName(nome);
+            System.out.println(String.format("O nome %s tem %d",nome,numeroDeLetras));
+        }
+    }
+public int getNumberOfLettersOfName(String nome){
+        String NomeSemEspacos = nome.replaceAll("\\s+","");
+        return NomeSemEspacos.length();
+}
+}
+
+
+
+
+
+
+
+//17) Faça um algoritmo que leia oito nomes e informe a quantidade de letras de cada um
+//deles.
