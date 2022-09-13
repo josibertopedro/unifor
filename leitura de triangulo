@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ex06 {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        double a;
+        double b;
+        double c;
+        System.out.println("Digite seu lado a: ");
+        a = x.nextDouble();
+        System.out.println("Digite seu lado b: ");
+        b = x.nextDouble();
+        System.out.println("Digite seu lado c: ");
+        c = x.nextDouble();
+        if(a==b && b==c && a==c){
+            System.out.println("seu triangulo é equilatero");
+
+        }
+        if(a!=b && b!=c && a!=c){
+            System.out.println("seu triangulo é escaleno");
+        }if(a==b && b!=c || a!=b && b==c || a==c && b!=c){
+            System.out.println("seu triangulo isoceles");
+        }
+    }
+}
+//6) Leia três lados de um triângulo e diga que:
+// i) O triângulo é equilátero se todos os lados forem iguais
+// ii) O triângulo é escaleno se todos os lados forem diferentes
+// iii)O triângulo é isóceles se apenas dois lados forem iguais
